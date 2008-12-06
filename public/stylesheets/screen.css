@@ -1,0 +1,121 @@
+@import url('reset.css');
+
+/*(C)2008 (X)HTML and CSS by Nicolas Calabrese | www.sikker.com.ar */
+
+/************************************************************************************************************************************************
+  S T Y L E S   B Y   S E C T I O N
+-------------------------------------------------------------------------------------------------------------------------------------------------
+  $ Common Styles
+  $ Home Page (index.html)
+************************************************************************************************************************************************/
+
+/* ·············································································································································            
+ $ Common Styles
+············································································································································· */
+
+body {text-align:center; background:url(/images/body-bg.jpg) repeat-x; }
+#wrapper {text-align:left; width:808px; margin:0 auto; }
+
+
+      
+/* Header */
+
+      #header {background:url(/images/header-bg.jpg) no-repeat 50% 0; min-height:217px; }
+      
+            #header h1 {float:left; margin:20px 0 0 0; }
+            #header h2 {width:152px; height:23px; position:relative; float:right; margin:33px 0 0 0; }
+                  #header h2 span {width:152px; height:23px; position:absolute; top:0; left:0; background:url(/images/header-h2-bg.jpg) no-repeat; }
+
+            #header .controls {clear:both; width:821px; height:43px; background:url(/images/controls-bg.jpg) no-repeat; position:relative; top:18px; margin-bottom:18px;}
+                  #header .nav {margin:0 7px; overflow:hidden; }
+                        #header .nav li {float:left; background:url(/images/header-nav-li-bg.jpg) no-repeat left top; height:32px; line-height:32px; margin:7px 0 0; padding:0 20px; position:relative; left:-2px}
+                              #header .nav li a {color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em; }
+                              #header .nav li a:hover {text-decoration:underline; }
+                              
+            #header .featured {height:200px; color:#BFBFBF; position:relative; }
+                  #header .featured h3 {font-size:1.8em; font-weight:normal;margin:60px 0 15px 5px; }
+                  #header .featured h4 {color:#FFFFFF; font-size:4em; font-weight:normal;}
+                  #header .featured p {font-size:1.3em; left:280px; position:absolute; top:0; width:410px;}
+                        #header .featured p strong , #header .featured p b {color:#fff; font-weight:normal; }
+                  #header .featured .button {width:85px; height:85px; background:url(/images/header-featured-button-bg.jpg) no-repeat; text-indent:-5000px;  display:block; position:absolute; top:0; left:730px}
+                  #header .featured .button:hover {background:url(/images/header-featured-button-bg.jpg) no-repeat 0 -85px;}
+                              
+                              
+                              
+
+/* Content */
+
+      #content {clear:both; background:url(/images/content-bg.jpg) repeat-y; color:#626363; font-size:1.2em;}
+            #content h2 {font-size:1.2em; color:#D41F26;color:#D41F26; font-size:1.4em; font-weight:normal; margin:0 0 0.8em 0;}
+            #content p {margin:0 0 1.1em 0;}
+                  #content strong, #content b, #content h3 {color:#444}
+                  #content a {color:#D41F26; text-decoration:none!; }
+                  #content a:hover {color:#D41F26; text-decoration:underline; }
+                  #content ul li {background:url(/images/content-li-bg.gif) no-repeat 0 1px; padding:0 0 0 25px;}
+      
+      /* Main */ 
+      #content .main { width:500px; float:left; }
+      #content .main .article {margin:0 0 2.4em; }
+      
+      
+      /* Sidebar */       
+      #content .related {float:right; margin:20px 30px 0 0; right:20px; width:210px; overflow:hidden; }
+            #content .related .section {border-top:1px solid #D8D8D8; margin:0 0 1em; padding:1em 0 0; position:relative; top:-1em; }
+            #content .related .section h4 {text-align:center; font-weight:normal; color:#777; margin:10px 0 0 0; }
+            #content .related .section img {margin:0 auto; display:block; }
+
+      
+/* Footer */
+
+      #footer {margin:40px 0; width:808px; height:38px; background:url(/images/footer-bg.jpg) no-repeat; }
+            #footer p {float:left; color:#BABABA; font-size:0.9em; margin:10px 20px;}
+                  #footer p a {color:#fff; text-decoration:none; }
+                  #footer p a:hover {text-decoration:underline; }
+            #footer p.feed {float:right; background:url(/images/footer-feed-bg.jpg) no-repeat 0 50%; padding: 0 0 0 20px; }
+      
+      
+/* ·············································································································································            
+ $ Home Page
+············································································································································· */
+
+/* Header */
+      #header {}
+
+      
+/* Content */
+
+      /* Main Content */ 
+      #content {}
+      
+      
+      /* Sidebar */       
+      #related-content {}
+      
+
+      
+/* Footer */
+
+      #footer {}
+      
+      
+      
+
+      
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
