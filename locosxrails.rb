@@ -1,8 +1,24 @@
 require 'rubygems'
 require 'sinatra'
+require 'digest/md5'
+
+# Local extra helper lib..
+require 'ext_helpers'
 
 layout 'layout'
 
+helpers do
+
+  def gravatar_url(email)
+    unless email.blank?
+      hash = Digest::MD5.hexdigest(email)
+      image = "http://www.gravatar.com/avatar/#{hash}"
+    else
+      image = "http://simplepie.org/blog/wp-content/gravatars/default_gravatar.png"
+    end
+  end
+  
+end
 
 get '/' do
   erb :home 
@@ -36,6 +52,6 @@ not_found do
   "Dude! we can't find this, try again!"
 end
 
-error do
-  "Something bad happened, we're investigting it."
-end
+#error do
+#  "Something bad happened, we're investigting it."
+#end
