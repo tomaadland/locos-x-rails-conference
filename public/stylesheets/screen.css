@@ -20,25 +20,26 @@ body {text-align:center; background:url(/images/body-bg.jpg) repeat-x; }
       
 /* Header */
 
-      #header {background:url(/images/header-bg.jpg) no-repeat 50% 0; min-height:217px; }
+      #header {}
       
-            #header h1 {float:left; margin:20px 0 0 0; }
-            #header h2 {width:152px; height:23px; position:relative; float:right; margin:33px 0 0 0; }
+            #header h1 {float:left; margin:20px 0 0 -85px; position:relative; }
+            #header h2 {width:152px; height:23px; position:relative; float:right; margin:33px 0 27px 0; }
                   #header h2 span {width:152px; height:23px; position:absolute; top:0; left:0; background:url(/images/header-h2-bg.jpg) no-repeat; }
 
-            #header .controls {clear:both; width:821px; height:43px; background:url(/images/controls-bg.jpg) no-repeat; position:relative; top:18px; margin-bottom:18px;}
-                  #header .nav {margin:0 7px; overflow:hidden; }
-                        #header .nav li {float:left; background:url(/images/header-nav-li-bg.jpg) no-repeat left top; height:32px; line-height:32px; margin:7px 0 0; padding:0 20px; position:relative; left:-2px}
+            #header .controls {clear:both; width:821px; height:43px; background:url(/images/controls-bg.jpg) no-repeat;}
+                  #header .nav {margin:0 5px;}
+                        #header .nav li {float:left; background:url(/images/header-nav-li-bg.jpg) no-repeat right top; height:32px; line-height:32px; margin:7px 0 0; padding:0 20px;}
                               #header .nav li a {color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em; }
                               #header .nav li a:hover {text-decoration:underline; }
                               
-            #header .featured {height:200px; color:#BFBFBF; position:relative; }
-                  #header .featured h3 {font-size:1.8em; font-weight:normal;margin:60px 0 15px 5px; }
-                  #header .featured h4 {color:#FFFFFF; font-size:4em; font-weight:normal;}
-                  #header .featured p {font-size:1.3em; left:280px; position:absolute; top:0; width:410px;}
-                        #header .featured p strong , #header .featured p b {color:#fff; font-weight:normal; }
-                  #header .featured .button {width:85px; height:85px; background:url(/images/header-featured-button-bg.jpg) no-repeat; text-indent:-5000px;  display:block; position:absolute; top:0; left:730px}
-                  #header .featured .button:hover {background:url(/images/header-featured-button-bg.jpg) no-repeat 0 -85px;}
+            #header .featured {color:#BFBFBF; padding:30px 10px; }
+                  #header .featured h3 {font-size:1.7em; font-weight:normal; float:left; }
+                  #header .featured div {float:left; height:110px; margin:0 0 0 20px;  }
+                        #header .featured h4 {color:#fff; font-size:3.5em; font-weight:normal; margin:8px 0 0 0; }
+                        #header .featured p {font-size:1.7em; margin:10px 0 0 0 ; }
+                  #header .featured .button {width:75px; height:75px; background:url(/images/header-featured-button-bg.jpg) no-repeat; text-indent:-5000px;  display:block;
+                  float:right; margin:-10px -18px 0 0; }
+                  #header .featured .button:hover {background:url(/images/header-featured-button-bg.jpg) no-repeat 0 -75px;}
                               
                               
                               
@@ -54,7 +55,7 @@ body {text-align:center; background:url(/images/body-bg.jpg) repeat-x; }
                   #content ul li {background:url(/images/content-li-bg.gif) no-repeat 0 1px; padding:0 0 0 25px;}
       
       /* Main */ 
-      #content .main { width:500px; float:left; }
+      #content .main { width:500px; float:left; margin:0 0 0 10px;  }
       #content .main .article {margin:0 0 2.4em; }
       
       
@@ -67,7 +68,7 @@ body {text-align:center; background:url(/images/body-bg.jpg) repeat-x; }
       
 /* Footer */
 
-      #footer {margin:40px 0; width:808px; height:38px; background:url(/images/footer-bg.jpg) no-repeat; }
+      #footer {margin:20px 0; width:808px; height:38px; background:url(/images/footer-bg.jpg) no-repeat; }
             #footer p {float:left; color:#BABABA; font-size:0.9em; margin:10px 20px;}
                   #footer p a {color:#fff; text-decoration:none; }
                   #footer p a:hover {text-decoration:underline; }
