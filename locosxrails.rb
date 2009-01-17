@@ -8,6 +8,10 @@ require 'ext_helpers'
 require 'l18n'
 include L18n
 
+class Rack::Lint::ErrorWrapper
+  alias_method :<<, :write unless instance_methods.include?(:<<) # strange rack or sinatra error, don't know why this is needed.
+end
+
 layout 'layout'
 
 helpers do
