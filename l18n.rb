@@ -1,5 +1,7 @@
 module L18n
 
+  # The default is currently "en." Once the spanish translation is complete,
+  # we should probably change this to "es."
   def lang
     @lang = params["lang"] || request.cookies["lang"] || 'en'
     set_cookie("lang", @lang)
