@@ -7,11 +7,13 @@ class LocosxrailsTest < Test::Unit::TestCase
   
   GETS = ['/', '/papers', '/schedule', '/sponsors', '/registration', '/contact'].freeze
   
-  def test_all_gets
-    GETS.each do |path|
-      get_it path
-      assert_equal 200, @response.status, "Could not get #{path}"
-    end
+  GETS.each do |path|
+    class_eval(<<-EOTEST)
+      def test_get_#{ path.gsub(/\//, '') }_page
+        get_it "#{ path }"
+        assert_equal 200, @response.status, "Could not get #{ path }"
+      end
+    EOTEST
   end
 
 end
