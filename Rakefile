@@ -1,5 +1,5 @@
 require 'rake'
-require 'ext_helpers'
+
 require 'l18n'
 include L18n
 
