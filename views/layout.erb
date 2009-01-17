@@ -2,11 +2,11 @@
 
 <!-- Copyright (c) 1999-2008, Scratching Heads -->
 
-<html lang="es"><!-- Edit --> 
+<html lang="<%= @lang %>"><!-- Edit -->
 
 <head>
 
-      <title>Locos X Rails</title><!-- Edit --> 
+      <title><%= s("Locos X Rails") %></title><!-- Edit -->
 
       <meta name="Title" content="CompanyName" />
       <meta name="Author" content="Nicolas Calabrese" />
@@ -15,85 +15,85 @@
 
       <meta name="Robots" content="index,follow" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-     
+
       <link href="/stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen, projector" />
       <link href="/stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
 
       <!-- IE COMPATIBILITY -->
             <!--[if lt IE 7]><script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE7.js" type="text/javascript"></script><![endif]-->
-      <!-- E N D -->       
-      
+      <!-- E N D -->
+
 </head>
 
 <body id="homepage">
       <noscript><p class="alert">You need to activate Flash and Javascript in order to see this site full functional.</p></noscript>
             <!-- ALERT MESSAGE FOR OLD IE VERSIONS -->
             <!--[if lt IE 7]><div><p class="alert browser-support">Using a modern browser that supports web standards ensures that the site's full visual experience is available.  Consider <a href="http://www.opera.com/products/desktop/">upgrading your browser</a> if you are using an older technology.</p></div><![endif]-->
-      <!-- E N D -->    
- 
+      <!-- E N D -->
+
 <div id="wrapper" class="layout-1">
 
 <!-- SITE HEADER  -->
 
       <div id="header">
-      
+
             <h1> <!-- Logo -->
                   <a href="/" title="Click here to go to the homepage">
                         <img src="/images/content/logo.jpg" alt="Locos x Rails" width="243" height="54" />
                   </a>
             </h1> <!-- /Logo -->
-            
-            <h2>Ruby Rails Argentina <span></span></h2>
-            
-                        
+
+            <h2><%= s("Ruby Rails Argentina") %> <span></span></h2>
+
+
             <div class="controls"><!-- Site navigation -->
-                        
+
                   <ul class="nav">
-                        <li><a href="/" alt="Home">Home</a></li>
-                        <li><a href="/papers" alt="Speakers">Call for Participation Overview</a></li>
-                        <li><a href="/schedule" alt="Ameteds calime">Schedule</a></li>
-                        <li><a href="/sponsors" alt="Dastim olempou">Sponsors</a></li>
-                        <li><a href="/registration" alt="Polimud irolam">Registration</a></li>
-                        <li><a href="/contact" alt="Contacto">Contact</a></li>
+                        <li><a href="/" alt="Home"><%= s("Home")%></a></li>
+                        <li><a href="/papers" alt="Speakers"><%= s("Call for Participation Overview") %></a></li>
+                        <li><a href="/schedule" alt="Ameteds calime"><%= s("Schedule") %></a></li>
+                        <li><a href="/sponsors" alt="Dastim olempou"><%= s("Sponsors") %></a></li>
+                        <li><a href="/registration" alt="Polimud irolam"><%= s("Registration") %></a></li>
+                        <li><a href="/contact" alt="Contacto"><%= s("Contact") %></a></li>
                   </ul><!-- /nav -->
 
             </div><!-- /Site navigation -->
-      
+
             <div class="featured">
-                  <h3>Conference</h3>
+                  <h3><%= s("Conference") %></h3>
                   <div>
-                    <h4>03/04/2009 - 04/04/2009</h4>
+                    <h4><%= s("April 3-4 2009") %></h4>
                     <p>Buenos Aires, Argentina</p>
                   </div>
                   <a class="button" title="M&aacute;s informaci&oacute;n." href="#">M&aacute;s informaci&oacute;n.</a>
             </div><!-- /main -->
-      
+
       </div>
 
-      
-      
+
+
 <!-- SITE CONTENT  -->
 
-      <div id="content" class="clearfix"> 
-                  
+      <div id="content" class="clearfix">
+
             <div class="main">
-              <%= yield %>     
+              <%= yield %>
             </div><!-- /main -->
 
             <div class="related">
 
                   <div class="section">
-                        <h2>Sponsors</h2>
-                              <h4>Platinum sponsors</h4>
-                              <h4>Golden sponsors</h4>
-                              <a href=""><img src="" alt="" /></a>
-                              <a href=""><img src="" alt="" /></a>
-                              <h4>Silver sponsors</h4>
-                              <a href=""><img src="" alt="" /></a>
-                  </div> 
-            
+                        <h2><%= s("Sponsors") %></h2>
+                        <h4><%= s("Platinum sponsors") %></h4>
+                        <h4><%= s("Gold sponsors") %></h4>
+                        <a href=""><img src="" alt="" /></a>
+                        <a href=""><img src="" alt="" /></a>
+                        <h4><%= s("Silver sponsors") %></h4>
+                        <a href=""><img src="" alt="" /></a>
+                  </div>
+
                   <div class="section">
-                    <!-- 
+                    <!--
                         <h2>Ejemplo lista</h2>
                         <ul>
                         	<li>
@@ -108,28 +108,35 @@
                         <p><a href="">m&aacute;s...</a></p>
                         -->
                   </div>
-                  
+
                   <div class="section">
                     <!--
                         <h2>Ejemplo parrafo</h2>
                         <p>Sanim ad minim veniam, quis nostrud exe sampi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritat em ilemnas. </p>
                         <p><a href="">m&aacute;s...</a></p>
                         -->
-                  </div>                  
-                  
-            </div><!-- /related -->
-      
-      </div><!-- /contents -->  
+                  </div>
 
-      
+            </div><!-- /related -->
+
+      </div><!-- /contents -->
+
+
 <!-- SITE FOOTER  -->
       <div id="footer">
-            
-            <p>&copy; 2008, Comunidad Rails Argentina - Powered by <a href="">Scratching Heads</a>.</p>
+
+            <p>&copy; 2008-2009, <%= s("Comunidad Rails Argentina") %> - <%= s("Powered by <a href="">Scratching Heads</a>.") %></p>
+            <p>
+              <% if @lang == 'en' %>
+                <a href="/?lang=es">Ver este sitio en castellano</a>
+              <% else %>
+                <a href="/?lang=en">View this site in English</a>
+              <% end %>
+            </p>
             <!-- <p class="feed"><a href="">Rss Feed</a>.</p> -->
-                  
+
       </div>
-      
+
 
 </div>
 

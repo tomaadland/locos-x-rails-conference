@@ -4,10 +4,17 @@ require 'digest/md5'
 
 # Local extra helper lib..
 require 'ext_helpers'
+# Localization functions
+require 'l18n'
+include L18n
 
 layout 'layout'
 
 helpers do
+  
+  def s(key)
+    get_string(key)
+  end
 
   def gravatar_url(email)
     unless email.blank?
@@ -17,15 +24,15 @@ helpers do
       image = "http://simplepie.org/blog/wp-content/gravatars/default_gravatar.png"
     end
   end
-  
+
 end
 
 get '/' do
-  erb :home 
+  erb :home
 end
 
-get '/sponsor' do 
-  erb :sponsor 
+get '/sponsor' do
+  erb :sponsor
 end
 
 get '/papers' do
