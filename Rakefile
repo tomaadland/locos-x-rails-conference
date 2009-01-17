@@ -1,5 +1,5 @@
 require 'rake'
-
+require 'ext_helpers'
 require 'l18n'
 include L18n
 
@@ -25,11 +25,18 @@ task :english do
   dump_yaml("en")
 end
 
+# If the hash has sorted each, its YAML represention will also be sorted.
+def hash_with_sorted_each
+  hash = Hash.new
+  def hash.each(&block); keys.sort.each { |k| yield k, self[k] }; end
+  hash
+end
+
 # TODO find a way to keep Yaml in UTF-8. WTF??? I thought this was 2009.
 def dump_yaml(lang)
-  hash = {}
+  hash = hash_with_sorted_each # for nicer YAML output
   get_matches.each do |m|
-    hash[m.to_s] = strings[lang][m.to_s]
+    hash[m.to_s] = get_string(m.to_s, lang)
   end
   puts hash.to_yaml
 end

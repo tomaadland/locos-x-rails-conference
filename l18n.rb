@@ -1,15 +1,25 @@
+require 'ext_helpers'
+
 module L18n
 
   # The default is currently "en." Once the spanish translation is complete,
   # we should probably change this to "es."
+  def default_lang
+    'en'
+  end
+
   def lang
-    @lang = params["lang"] || request.cookies["lang"] || 'en'
+    @lang = params["lang"] || request.cookies["lang"] || default_lang
     set_cookie("lang", @lang)
     @lang
   end
 
-  def get_string(key)
-    strings[lang][key.to_s] || key
+  
+  def get_string(key, l = lang)
+    k = key.to_s
+    str = strings[l][k]
+    str = strings[default_lang][k] if str.blank? && default_lang != l
+    str.blank? ? k : str
   end
 
   def strings
