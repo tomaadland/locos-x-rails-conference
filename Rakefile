@@ -20,7 +20,7 @@ task :spanish do
   dump_yaml("es")
 end
 
-desc "Get Spanish file including already translated strings"
+desc "Get English file including already translated strings"
 task :english do
   dump_yaml("en")
 end
