@@ -1,26 +1,35 @@
 --- 
 April 3-4 2009: 3/4/2009 - 4/4/2009
-Attention Ruby on Rails enthusiasts: "Atenci\xC3\xB3n simpatizantes y fan\xC3\xA1ticos de Ruby on Rails: Quedan cordialmente invitados\n\
-  a la primer conferencia dedicada al innovador framework Ruby on Rails a realizarce en el Cono Sur.\n\
-  La conferencia Locos por Rails 2009 se llevara a cabo los dias 3 y 4 de Abril en Buenos Aires, Argentina.\n\
-  Este popular destino turistico de Sud America es el marco ideal para disfrutar las presentaciones de discertantes\n\
-  locales, e internacionales, conocer gente nueva, \xC2\xA1y pasarlo bien!"
+Attention Ruby on Rails enthusiasts: |-
+  Atención simpatizantes y fanáticos de Ruby on Rails: Quedan cordialmente
+  invitados a la primer conferencia dedicada al innovador framework Ruby on
+  Rails a realizarce en el Cono Sur. La conferencia Locos por Rails 2009 se
+  llevara a cabo los dias 3 y 4 de Abril en Buenos Aires, Argentina. Este
+  popular destino turistico de Sud America es el marco ideal para disfrutar
+  las presentaciones de discertantes locales, e internacionales, conocer gente
+  nueva, y pasarlo bien!
 Call For Papers: Cómo participar
-Call for Participation Overview: "\xC2\xBFQuer\xC3\xA9s ser discertante?"
+Call for Participation Overview: Querés ser discertante?
 Comunidad Rails Argentina: Comunidad Rails Argentina
 Conference: Conferencia
 Contact: Contacto
-Contact the Locos por Rails 2009 Conference Organizers: Contactá a los organizadores de Locos por Rails 2009
-Events will be posted here as they become finalized.: Las agenda de la conferencía sera publicada aqui una vez que sea cerrada.
+Contact the Locos por Rails 2009 Conference Organizers: |-
+  Contactá a los organizadores de Locos por Rails 2009
+Events will be posted here as they become finalized.: |-
+  Las agenda de la conferencía sera publicada aqui una vez que sea cerrada.
 Gold sponsors: Sponsors Gold
-Home: "P\xC3\xA1gina Principal"
-Interested in attending?: "\xC2\xBFQuer\xC3\xA9s asistir? El calendario completo de Locos por Rails 2009\n\
-  estar\xC3\xA1 disponible una vez que hallamos confirmado y agendado el orden de las charlas.\n\
-  S\xC3\xADguenos en Twitter para estar al tanto de las \xC3\xBAltimas novedades <a href=\"http://twitter.com/locosxrails\" target=\"_blank\">http://twitter.com/locosxrails</a>"
-Interested in participating?: "\xC2\xBFQuer\xC3\xA9s ser discertante? Revis\xC3\xA1 la p\xC3\xA1gina de <a href=\"/papers\">requisitos</a>."
+Home: Página Principal
+Interested in attending?: |-
+  Querés asistir? El calendario completo de Locos por Rails 2009 estará
+  disponible una vez que hallamos confirmado y agendado el orden de las
+  charlas. Síguenos en Twitter para estar al tanto de las últimas novedades <a
+  href="http://twitter.com/locosxrails"
+  target="_blank">http://twitter.com/locosxrails</a>
+Interested in participating?: |-
+  Querés ser discertante? Revisá la página de <a href="/papers">requisitos</a>.
 Locos X Rails: Locos X Rails
 Locos por Rails Conference in Buenos Aires Argentina: Conferencia Locos por Rails en Buenos Aires
-More Information: M&aacute;s informaci&oacute;n.
+More Information: Más información
 Platinum sponsors: Sponsors Platinum
 Powered by <a href="">Scratching Heads</a>.: Powered by <a href="">Scratching Heads</a>.
 Registration: Registro
@@ -32,21 +41,22 @@ Sponsors: Sponsors
 The call for papers will close on February 15th, 2009: Aceptaremos propuestas de discertantes hasta el 15 de Febrero de 2009.
 The hard working organizers: Conoce a los organizadores
 call for papers description: |-
-  Locos por Rails 2009 no ha cerrado su agenda de precentaciones, 
-  todas las propuestas que recibamos serán consideradas.
-  Aquellos interesados en enviar propuestas pueden hacerlo a la
-  <a href="mailto:papers@locosxrails.com">casilla de correo de la organización</a>.
-  tan pronto como sea posible, para recibir un kit de author.
+  Locos por Rails 2009 no ha cerrado su agenda de precentaciones, todas las
+  propuestas que recibamos serán consideradas. Aquellos interesados en enviar
+  propuestas pueden hacerlo a la <a href="mailto:papers@locosxrails.com">casilla
+  de correo de la organización</a>. tan pronto como sea posible, para recibir un kit de
+  author.
 contact_the_organizers: |-
-  Cualquier duda o consulta acerca de Locos por Rails 2009, no dude en comunicarse con nosotros:
-  <a href="mailto:locos@locosxrails.com">locos@locosxrails.com</a>.
+  Cualquier duda o consulta acerca de Locos por Rails 2009, no dude en
+  comunicarse con nosotros: <a
+  href="mailto:locos@locosxrails.com">locos@locosxrails.com</a>.
 invite_to_participation: |-
-  Te invitamos a leer los<a href="/papers">requisitos para participar</a>
-  para detalles acerca de cómo ser discertante.
+  Te invitamos a leer los<a href="/papers">requisitos para participar</a> para
+  detalles acerca de cómo ser discertante.
 register description: |-
-  El registro de asistentes no esta activo todavía
-  Siguenos en <a href="http://twitter.com/locosxrails" target="_blank">twitter</a>
-  para recibir noticias y el aviso de la apertura de las registraciones.
+  El registro de asistentes no esta activo todavía Siguenos en <a
+  href="http://twitter.com/locosxrails" target="_blank">twitter</a> para
+  recibir noticias y el aviso de la apertura de las registraciones.
 sponsors_packages_data_list: |-
   <ul>
   <li>Target de Audiencia &#8211; Desarrolladores con experiencia media a avanzada en el uso de Rails y Ruby.</li>
@@ -54,7 +64,9 @@ sponsors_packages_data_list: |-
   <li>Fechas &#8211; 3 y 4 de Abril de 2009</li>
   </ul>
 sponsors_packages_intro: |-
-  Locos por Rails 2009 es la primera conferencia para la comunidad de Ruby on Rails en el Cono Sur.
-  Aproveche esta oportunidad para dar a conocer su compañía, productos y servicios a los más influyentes
-  contribuidores y usuarios de Ruby on Rails de hoy día.
-  Ofrecemos varíos categorias de sponsoring con excelentes oportunidades y beneficios en cada una de las mismas.
+  Locos por Rails 2009 es la primera conferencia para la comunidad de Ruby on
+  Rails en el Cono Sur. Aproveche esta oportunidad para dar a conocer su
+  compañía, productos y servicios a los más influyentes contribuidores y
+  usuarios de Ruby on Rails de hoy día. Ofrecemos varíos categorias de
+  sponsoring con excelentes oportunidades y beneficios en cada una de las
+  mismas.
