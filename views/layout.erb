@@ -128,13 +128,15 @@
       <div id="footer">
 
             <p>&copy; 2008-2009, <%= s("Comunidad Rails Argentina") %> - <%= s("Powered by <a href="">Scratching Heads</a>.") %></p>
-            <p>
-              <% if @lang == 'en' %>
-                <a href="/?lang=es">Ver este sitio en castellano</a>
-              <% else %>
-                <a href="/?lang=en">View this site in English</a>
-              <% end %>
-            </p>
+            <div id="language_selector">
+              <p>
+                <% if @lang == 'en' %>
+                  <a href="/?lang=es" class="ar">Ver este sitio en castellano</a>
+                <% else %>
+                  <a href="/?lang=en" class="<%= random_flag %>">View this site in English</a>
+                <% end %>
+              </p>
+            </div>
             <!-- <p class="feed"><a href="">Rss Feed</a>.</p> -->
 
       </div>

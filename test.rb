@@ -5,11 +5,11 @@ require 'locosxrails'
 
 class LocosxrailsTest < Test::Unit::TestCase
   
-  GETS = ['/', '/papers', '/schedule', '/sponsors', '/registration', '/contact'].freeze
+  GETS = ['/', '/papers', '/schedule', '/sponsors', '/registration', '/contact', '/presenters-kit'].freeze
   
   GETS.each do |path|
     class_eval(<<-EOTEST)
-      def test_get_#{ path.gsub(/\//, '') }_page
+      def test_get_#{ path.gsub(/\//, '').gsub('-', '_') }_page
         get_it "#{ path }"
         assert_equal 200, @response.status, "Could not get #{ path }"
       end

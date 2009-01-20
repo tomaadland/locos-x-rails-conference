@@ -15,7 +15,7 @@ end
 layout 'layout'
 
 helpers do
-  
+
   def s(key)
     get_string(key)
   end
@@ -27,6 +27,13 @@ helpers do
     else
       image = "http://simplepie.org/blog/wp-content/gravatars/default_gravatar.png"
     end
+  end
+
+  # Ok, nobody accuse me of being an imperialist Yankee or Limey or Pom or
+  # whatever. Let's put all the major EN flags up there. Shuffle is weighted
+  # towards US and GB though... just because.
+  def random_flag
+    ['au', 'ca', 'gb', 'gb', 'gb', 'nz', 'us', 'us', 'us'].shuffle[0]
   end
 
 end
@@ -57,6 +64,10 @@ end
 
 get '/contact' do
   erb :contact
+end
+
+get '/presenters-kit' do
+  erb :presenters_kit
 end
 
 not_found do
