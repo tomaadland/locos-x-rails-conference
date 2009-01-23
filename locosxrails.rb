@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'digest/md5'
-
 # Local extra helper lib..
 require 'ext_helpers'
 # Localization functions

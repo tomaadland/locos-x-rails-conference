@@ -1,4 +1,5 @@
 require 'ext_helpers'
+require 'yaml'
 
 module L18n
 
@@ -10,7 +11,7 @@ module L18n
 
   def lang
     @lang = params["lang"] || request.cookies["lang"] || default_lang
-    set_cookie("lang", @lang)
+    response.set_cookie("lang", @lang)
     @lang
   end
 

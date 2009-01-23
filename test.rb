@@ -10,7 +10,7 @@ class LocosxrailsTest < Test::Unit::TestCase
   GETS.each do |path|
     class_eval(<<-EOTEST)
       def test_get_#{ path.gsub(/\//, '').gsub('-', '_') }_page
-        get_it "#{ path }"
+        get "#{ path }"
         assert_equal 200, @response.status, "Could not get #{ path }"
       end
     EOTEST

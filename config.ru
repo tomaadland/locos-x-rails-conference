@@ -1,12 +1,12 @@
 require 'rubygems'
 require 'sinatra'
 
-Sinatra::Application.default_options.merge!(
+Sinatra::Application.set(
    :run => false,
-   :env => :production,
+   :environment => :production,
    :views => File.join(File.dirname(__FILE__), 'views')
 )
 
 require 'locosxrails.rb'
-run Sinatra.application
+run Sinatra::Application
 
