@@ -33,7 +33,7 @@ helpers do
   # whatever. Let's put all the major EN flags up there. Shuffle is weighted
   # towards US and GB though... just because.
   def random_flag
-    ['au', 'ca', 'gb', 'gb', 'gb', 'nz', 'us', 'us', 'us'].shuffle[0]
+    ['au', 'ca', 'gb', 'gb', 'gb', 'nz', 'us', 'us', 'us'].sort { rand <=> rand }.first
   end
 
 end
