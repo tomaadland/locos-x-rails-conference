@@ -24,11 +24,11 @@ body {text-align:center; background:url(/images/body-bg.jpg) repeat-x; }
 
             #header h1 {float:left; margin:20px 0 0 -85px; position:relative; }
             #header h2 {width:152px; height:23px; position:relative; float:right; margin:33px 0 27px 0; }
-                  #header h2 span {width:152px; height:23px; position:absolute; top:0; left:0; background:url(/images/header-h2-bg.jpg) no-repeat; }
+            #header h2 span {width:152px; height:23px; position:absolute; top:0; left:0; no-repeat; }
 
             #header .controls {clear:both; width:821px; height:43px; background:url(/images/controls-bg.jpg) no-repeat;}
                   #header .nav {margin:0 5px;}
-                        #header .nav li {float:left; background:url(/images/header-nav-li-bg.jpg) no-repeat right top; height:32px; line-height:32px; margin:7px 0 0; padding:0 20px;}
+                        #header .nav li {float:left; background:url(/images/header-nav-li-bg.jpg) no-repeat right top; height:32px; line-height:32px; margin:7px 0 0; padding:0 10px;}
                               #header .nav li a {color:#fff; text-decoration:none; font-weight:bold; font-size:1.1em; }
                               #header .nav li a:hover {text-decoration:underline; }
 
@@ -98,7 +98,7 @@ body {text-align:center; background:url(/images/body-bg.jpg) repeat-x; }
 
       #footer {}
       #language_selector { float: right;}
-      #language_selector a { padding: 0 0 0 22px; }
+      #language_selector a { padding: 0 0 0 22px; color: #D41F26;}
       #language_selector a.ar { background: transparent url(/images/flags/ar.png) top left no-repeat;}
       #language_selector a.au { background: transparent url(/images/flags/au.png) top left no-repeat;}
       #language_selector a.ca { background: transparent url(/images/flags/ca.png) top left no-repeat;}

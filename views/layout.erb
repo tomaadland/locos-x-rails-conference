@@ -42,11 +42,17 @@
                         <img src="/images/content/logo.jpg" alt="Locos x Rails" width="243" height="54" />
                   </a>
             </h1> <!-- /Logo -->
+            <h2><%# = s("Ruby Rails Argentina") %>
+               <span id="language_selector">
+                <% if @lang == 'en' %>
+                  <a href="/?lang=es" class="ar">Castellano</a>
+                <% else %>
+                  <a href="/?lang=en" class="<%= random_flag %>">English</a>
+                  <% end %>
+                </span>
 
-            <h2><%= s("Ruby Rails Argentina") %> <span></span></h2>
-
-
-            <div class="controls"><!-- Site navigation -->
+            </h2>
+                       <div class="controls"><!-- Site navigation -->
 
                   <ul class="nav">
                         <li><a href="/" alt="Home"><%= s("Home")%></a></li>
@@ -54,6 +60,7 @@
                         <li><a href="/schedule" alt="Ameteds calime"><%= s("Schedule") %></a></li>
                         <li><a href="/sponsors" alt="Dastim olempou"><%= s("Sponsors") %></a></li>
                         <li><a href="/registration" alt="Polimud irolam"><%= s("Registration") %></a></li>
+                        <li><a href="/presenters-kit" alt="Presenters Kit"><%= s("Presenters kit") %></a></li>
                         <li><a href="/contact" alt="Contacto"><%= s("Contact") %></a></li>
                   </ul><!-- /nav -->
 
@@ -85,15 +92,71 @@
             <div class="related">
 
                   <div class="section">
-                        <h2><%= s("Sponsors") %></h2>
+     		        <h2><%= s("Sponsors") %></h2>
                         <h4><%= s("Platinum sponsors") %></h4>
                         <h4><%= s("Gold sponsors") %></h4>
                         <a href=""><img src="" alt="" /></a>
                         <a href=""><img src="" alt="" /></a>
                         <h4><%= s("Silver sponsors") %></h4>
                         <a href=""><img src="" alt="" /></a>
-                  </div>
+                  </div> 
+           	  <div class="section">
+		  <!-- Include the Google Friend Connect javascript library. -->
+		  <script type="text/javascript" src="http://www.google.com/friendconnect/script/friendconnect.js"></script>
 
+		  <!-- Define the div tag where the gadget will be inserted. -->
+		  <div id="div-1228577933795" style="width:210px;border:1px solid #cccccc;"></div>
+		  <!-- Render the gadget into a div. -->
+		  <script type="text/javascript">
+		  var skin = {};
+		  skin['HEIGHT'] = '250';
+		  skin['BORDER_COLOR'] = '#cccccc';
+		  skin['ENDCAP_BG_COLOR'] = '#D8D8D8';
+		  skin['ENDCAP_TEXT_COLOR'] = '#333333';
+		  skin['ENDCAP_LINK_COLOR'] = '#0000cc';
+		  skin['ALTERNATE_BG_COLOR'] = '#ffffff';
+		  skin['CONTENT_BG_COLOR'] = '#ffffff';
+		  skin['CONTENT_LINK_COLOR'] = '#0000cc';
+		  skin['CONTENT_TEXT_COLOR'] = '#333333';
+		  skin['CONTENT_SECONDARY_LINK_COLOR'] = '#7777cc';
+		  skin['CONTENT_SECONDARY_TEXT_COLOR'] = '#666666';
+		  skin['CONTENT_HEADLINE_COLOR'] = '#333333';
+		  google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
+		  google.friendconnect.container.renderMembersGadget(
+		   { id: 'div-1228577933795',
+		      site: '10155572399577033540'},
+		        skin);
+			</script>
+		</div>
+		<div class="section">
+		<!-- Define the div tag where the gadget will be inserted. -->
+		<div id="div-1228578190979" style="width:210px;border:1px solid #cccccc;"></div>
+		<!-- Render the gadget into a div. -->
+		<script type="text/javascript">
+		var skin = {};
+		skin['BORDER_COLOR'] = '#cccccc';
+		skin['ENDCAP_BG_COLOR'] = '#D8D8D8';
+		skin['ENDCAP_TEXT_COLOR'] = '#333333';
+		skin['ENDCAP_LINK_COLOR'] = '#0000cc';
+		skin['ALTERNATE_BG_COLOR'] = '#ffffff';
+		skin['CONTENT_BG_COLOR'] = '#ffffff';
+		skin['CONTENT_LINK_COLOR'] = '#0000cc';
+		skin['CONTENT_TEXT_COLOR'] = '#333333';
+		skin['CONTENT_SECONDARY_LINK_COLOR'] = '#7777cc';
+		skin['CONTENT_SECONDARY_TEXT_COLOR'] = '#666666';
+		skin['CONTENT_HEADLINE_COLOR'] = '#333333';
+		skin['DEFAULT_COMMENT_TEXT'] = '- add your comment here -';
+		skin['HEADER_TEXT'] = 'Comments';
+		skin['POSTS_PER_PAGE'] = '5';
+		google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
+		google.friendconnect.container.renderWallGadget(
+		 { id: 'div-1228578190979',
+		    site: '10155572399577033540',
+		       'view-params':{"scope":"SITE","features":"video,comment"}
+		       },
+		         skin);
+			 </script>
+               </div>
                   <div class="section">
                     <!--
                         <h2>Ejemplo lista</h2>
@@ -128,21 +191,22 @@
       <div id="footer">
 
             <p>&copy; 2008-2009, <%= s("Comunidad Rails Argentina") %> - <%= s("Powered by <a href="">Scratching Heads</a>.") %></p>
-            <div id="language_selector">
-              <p>
-                <% if @lang == 'en' %>
-                  <a href="/?lang=es" class="ar">Ver este sitio en castellano</a>
-                <% else %>
-                  <a href="/?lang=en" class="<%= random_flag %>">View this site in English</a>
-                <% end %>
-              </p>
-            </div>
-            <!-- <p class="feed"><a href="">Rss Feed</a>.</p> -->
+                        <!-- <p class="feed"><a href="">Rss Feed</a>.</p> -->
 
       </div>
 
 
 </div>
+<script src="http://locosxrails.uservoice.com/pages/general/widgets/tab.js?alignment=right&amp;color=D8D8D8" type="text/javascript"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6588984-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 
 </body>
 </html>
