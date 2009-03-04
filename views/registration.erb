@@ -1,5 +1,14 @@
 <div class="article">
   <h2><%= s("Registration") %></h2>
-  <p><%= s("register description") %></p>
+  <% if lang == 'en' %>
+    <p>
+      We're sorry, but our registration form is only available in Spanish.
+      If you do not speak Spanish but wish to register for the conference,
+      please send your name and contact information to <a 
+        href="mailto:locos@locosxrails.com">locos@locosxrails.com</a> and we'll
+      help you sign up.
+    </p>
+  <% end %>
+  <iframe src='http://eventioz.com/events/locos-x-rails-conference/registrations/new?iframe' height='800' allowTransparency='true' frameborder='0' scrolling='no' style='width:100%;border:none'></iframe>
 </div>
 
