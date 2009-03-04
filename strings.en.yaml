@@ -1,4 +1,5 @@
---- 
+---
+Calendar: Calendar
 Conference Speakers: Conference Speakers
 Please view our conference schedule on Eventioz.com: 'Please view our conference schedule on <a href="http://eventioz.com/events/locos-x-rails-conference/agenda">Eventioz.com</a>'
 April 3-4 2009: April 3-4 2009
@@ -45,7 +46,7 @@ call for papers description: |-
   <a href="mailto:papers@locosxrails.com">Conference Organizers</a>
   as early as possible to receive an presenter's kit.
 contact_the_organizers: |-
-  If you have any questions regarding Locos por Rails 2009, 
+  If you have any questions regarding Locos por Rails 2009,
   contact us at <a href="mailto:locos@locosxrails.com"> locos@locosxrails.com</a>.
 invite_to_participation: |-
   We invite you to read the <a href="/papers">Call For Participation</a>
